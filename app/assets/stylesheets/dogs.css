@@ -1,0 +1,30 @@
+.dogs-page {
+    background-color: rgb(85, 132, 147);
+}
+
+
+/* A táblázat stílusának módosítása */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+/* Sorok váltakozó háttérszíne */
+tr:nth-child(even) {
+    background-color: #9c7070;
+}
+
+/* Link stílusok */
+a {
+    text-decoration: none;
+    color: #150708;
+}
+
+/* Gomb stílusok */
+.edit-button, .remove-button {
+    background-color: #78a181;
+    color: #3d0808;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
