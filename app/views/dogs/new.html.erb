@@ -1,13 +1,2 @@
-
-<h3>Create a Dog</h3>
-<%= form_with model: @dog do |form| %>
-  <%= form.text_field :name, placeholder: "name" %>
-  <%= form.text_field :motto, placeholder: "motto" %>
-  <%= form.submit %>
-<% end %>
-
-<!-- <%= form_for @dog do |form| %>
-  <%= form.text_field :name, placeholder: 'name' %>
-  <%= form.text_field :motto, placeholder: 'motto' %>
-  <%= form.submit %>
-<% end %> -->
+<h1 class="text-center mt-4">Create a new dog</h1>
+<%= render 'form' %>

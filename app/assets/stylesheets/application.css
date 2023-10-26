@@ -1,2 +1,7 @@
 
+@import 'bootstrap/dist/css/bootstrap'; // Bootstrap importálása
+@import 'your_custom_styles'; // Saját stíluslap importálása
+
+// Ezen a ponton további saját stílusokat is hozzáadhatsz
+
 

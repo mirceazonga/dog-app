@@ -1,5 +1,5 @@
 class DogsController < ApplicationController
-  before_action :current_dog, only: [:show, :edit, :update, :destroy]
+  before_action :current_dog, only: [:show, :edit, :update, :destroy ]
 
   def index
     @dogs = Dog.all
@@ -20,8 +20,10 @@ class DogsController < ApplicationController
   end
 
   def edit
-
   end
+   
+
+ 
 
   def update
     @dog.update(dog_params)
@@ -40,9 +42,10 @@ class DogsController < ApplicationController
   def dog_params
     params.require(:dog).permit(:name, :motto)
   end
-
   def current_dog
     @dog = Dog.find(params[:id])
   end
+
+
 
 end

@@ -1,17 +1,3 @@
-   <!DOCTYPE html>
-<html>
-<head>
-  <title>Edit</title>
- 
- <%= stylesheet_link_tag 'edit' %>
-<body class="edit-page">
 
-<h3>Update Dog Details</h3>
-<%= form_with model: @dog do |form| %>
-  <%= form.text_field :name, placeholder: "name" %>
-  <%= form.text_field :motto, placeholder: "motto" %>
-  <%= form.submit %>
- 
-<% end %>
-</body>
-</html>
+<h1 class="text-center mt-4">Edit dog</h1>
+<%= render 'form' %>

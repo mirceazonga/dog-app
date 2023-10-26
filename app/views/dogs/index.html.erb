@@ -1,30 +1,31 @@
 
-   <!DOCTYPE html>
-<html>
-<head>
-  <title>Dogs</title>
- <%= stylesheet_link_tag 'dogs' %> 
- 
- <!-- CSS fájl beillesztése -->
-</head>
-<body class="dogs-page">
 
-    <!-- A "dogs" oldal tartalma -->
+
+
+
+
+
 
 
 <table>
+
+
+  <table class="table table-dark table-striped">
+    <thead class="thead-dark">
+
   <% @dogs.each do |dog| %>
     <tr>
       <td><%= link_to dog.name, dog_path(dog) %></td>
       <td><%= button_to 'Edit', edit_dog_path(dog), method: 'get'%></td>
       <td><%= button_to 'Remove', dog_path(dog), method: 'delete', data: { confirm: 'Are you sure?' } %></td>
+      <td><%= link_to "show", dog_path(dog) %></td>
   <% end %>
+
 </table>
+ 
 <%= link_to "Add a New Dog", new_dog_path %>
-</body>
-</html>
-
-
+<br/><br/>
+<br/><br/>
 
 
 

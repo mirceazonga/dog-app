@@ -1,14 +1,37 @@
-   <!DOCTYPE html>
-<html>
-<head>
-  <title>show</title>
+<h2><%= @dog.name %></h2>
+<h3><%= @dog.motto %></h3>
 
- <%= stylesheet_link_tag 'show' %>
- <!-- CSS fájl beillesztése -->
-</head>
-<body class="show-page">
+<div class="container">
+  <div class="row justify-content-md-center">
+    <div class="col-8 mt-4">
+      <div class="card text-center shadow mb-5 bg-white rounded">
+       
+        <div class="card-body">
+         
+         
+          <%= link_to "Edit", edit_dog_path(@dog), class: "btn btn-outline-info" %>
+          <%= link_to "Delete", dog_path(@dog), class: "btn btn-outline-danger", method: :delete, data: {confirm: "Are you sure?"} %>
+         
+        </div>
+        <div class="card-footer text-muted">
+          <small>Created <%= time_ago_in_words(@dog.created_at) %> ago, 
+          edited <%= time_ago_in_words(@dog.updated_at) %> ago</small>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
-<h1><%= @dog.name %></h1>
-<h4>"<%= @dog.motto %>"</h4>
-</body>
-</html>
+
+
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
