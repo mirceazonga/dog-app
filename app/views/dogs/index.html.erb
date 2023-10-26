@@ -12,6 +12,7 @@
 
   <table class="table table-dark table-striped">
     <thead class="thead-dark">
+     <% if user_signed_in? %>
 
   <% @dogs.each do |dog| %>
     <tr>
@@ -24,6 +25,7 @@
 </table>
  
 <%= link_to "Add a New Dog", new_dog_path %>
+<%end%>
 <br/><br/>
 <br/><br/>
 
